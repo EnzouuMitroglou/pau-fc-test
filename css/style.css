@@ -1,0 +1,135 @@
+:root {
+  --color-pitch: #0B3D2E;
+  --color-pitch-light: #15543F;
+  --color-gold: #FFC857;
+  --color-bg: #F7F7F2;
+  --color-text: #15241F;
+  --color-muted: #5C6B63;
+  --radius: 10px;
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+/* -- Header -- */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: var(--color-pitch);
+  color: white;
+}
+
+.crest {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: var(--color-pitch);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.club-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  flex: 1;
+}
+
+.install-btn {
+  background: var(--color-gold);
+  color: var(--color-pitch);
+  border: none;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+
+/* -- Hero -- */
+.hero {
+  padding: 32px 20px;
+  border-bottom: 1px solid #e3e1d8;
+}
+
+.hero-label {
+  margin: 0 0 4px;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.hero h1 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: clamp(26px, 6vw, 38px);
+  color: var(--color-pitch);
+}
+
+.hero-meta {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+/* -- News -- */
+.news {
+  padding: 24px 20px 40px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.news h2 {
+  font-family: var(--font-display);
+  color: var(--color-pitch);
+}
+
+.news-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.news-card {
+  background: white;
+  border: 1px solid #e3e1d8;
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.news-card h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.news-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 15px;
+}
+
+/* -- Footer -- */
+.site-footer {
+  padding: 18px 20px 32px;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+@media (min-width: 640px) {
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
