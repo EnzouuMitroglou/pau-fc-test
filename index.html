@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pau FC Officiel</title>
+
+  <!-- PWA : ce lien est ce qui rend le site "installable" -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B3D2E">
+
+  <!-- Support iOS (Safari ignore en partie le manifest) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="crest" aria-hidden="true">PFC</div>
+    <span class="club-name">Pau FC</span>
+    <button id="install-btn" class="install-btn" hidden>Installer l'appli</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-label">Prochain match</p>
+      <h1>Pau FC — AS Adversaire</h1>
+      <p class="hero-meta">Samedi · Stade du Hameau · 19h00</p>
+    </section>
+
+    <section class="news">
+      <h2>Actualités</h2>
+      <div class="news-grid" id="news-grid">
+        <!-- JS viendra remplir ou compléter cette liste -->
+        <article class="news-card">
+          <h3>Victoire 2-0 ce week-end</h3>
+          <p>Résumé du dernier match à domicile et les temps forts.</p>
+        </article>
+        <article class="news-card">
+          <h3>Billetterie ouverte</h3>
+          <p>Les places pour le prochain match sont en vente.</p>
+        </article>
+        <article class="news-card">
+          <h3>Interview du capitaine</h3>
+          <p>Retour sur la première partie de saison.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Projet étudiant — non affilié officiellement au club.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

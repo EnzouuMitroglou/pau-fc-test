@@ -1,0 +1,26 @@
+{
+  "name": "Pau FC Officiel",
+  "short_name": "Pau FC",
+  "description": "L'actualité, le calendrier et les résultats du Pau FC, directement sur votre téléphone.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F7F2",
+  "theme_color": "#0B3D2E",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
