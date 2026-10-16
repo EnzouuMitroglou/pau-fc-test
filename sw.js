@@ -1,9 +1,9 @@
 const CACHE_NAME = 'pau-fc-v1';
 const FILES_TO_CACHE = [
-  '/index.html',
-  '/css/style.css',
-  '/js/app.js',
-  '/manifest.json'
+  './index.html',
+  './css/style.css',
+  './js/app.js',
+  './manifest.json'
 ];
 
 // À l'installation : on met en cache les fichiers de base de l'appli
