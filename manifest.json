@@ -3,7 +3,7 @@
   "short_name": "Pau FC",
   "description": "L'actualité, le calendrier et les résultats du Pau FC, directement sur votre téléphone.",
   "start_url": "/index.html",
-  "scope": "/",
+  "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#F7F7F2",
